@@ -51,6 +51,17 @@ local plugins = {
     "github/copilot.vim",
     enabled = true,
     lazy = false,
+  },
+
+  {
+    "phpactor/phpactor",
+    enabled = true,
+    lazy = false,
+    config = function()
+      vim.cmd("nmap <Leader>u :call phpactor#UseAdd()<CR>")
+      -- Set php bin path
+      vim.cmd("let g:phpactorPhpBin = 'c:/xampp_php8/php/php.exe'")
+    end,
   }
 
   -- To make a plugin not be loaded
