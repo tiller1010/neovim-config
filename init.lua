@@ -19,7 +19,3 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
-vim.opt.shell = 'cmd.exe'
-vim.opt.hlsearch = false
-
-vim.cmd [[hi Visual guifg=#0000ff guibg=#ffffff]]
