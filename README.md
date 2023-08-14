@@ -5,4 +5,6 @@
 alias vi="winpty nvim"
 ```
 - Install nerd font and set as terminal font
-- Run composer inside of ~/AppData/Local/nvim-data/lazy/phpactor
+- Install ripgrep: https://github.com/BurntSushi/ripgrep
+- Install Zig and add it to your path: https://ziglang.org/download/
+

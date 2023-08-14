@@ -73,6 +73,7 @@ local default_plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
+    enabled = false,
     init = function()
       require("core.utils").lazy_load "nvim-treesitter"
     end,
@@ -148,6 +149,7 @@ local default_plugins = {
   -- load luasnips + cmp related in insert mode only
   {
     "hrsh7th/nvim-cmp",
+    enabled = false,
     event = "InsertEnter",
     dependencies = {
       {
