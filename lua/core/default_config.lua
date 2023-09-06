@@ -35,7 +35,20 @@ M.ui = {
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
     separator_style = "default",
-    overriden_modules = nil,
+    overriden_modules = function(modules)
+      -- cwd
+      modules[9] = (function()
+        return ''
+      end)()
+      -- lsp
+      modules[8] = (function()
+        return ''
+      end)()
+      -- git
+      modules[3] = (function()
+        return ''
+      end)()
+    end,
   },
 
   -- lazyload it when there are 1+ buffers
