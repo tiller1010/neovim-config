@@ -23,4 +23,5 @@ require "plugins"
 vim.cmd [[hi Visual guifg=#0000ff guibg=#ffffff]]
 vim.opt.shell = 'cmd.exe'
 vim.opt.hlsearch = false
+vim.g.copilot_filetypes = { ['markdown'] = true }
 
