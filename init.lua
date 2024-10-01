@@ -21,7 +21,12 @@ vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
 vim.cmd [[hi Visual guifg=#0000ff guibg=#ffffff]]
-vim.opt.shell = 'cmd.exe'
+
+if vim.fn.has('win32') == 1 then
+  vim.opt.shell = 'cmd.exe'
+end
+
 vim.opt.hlsearch = false
+
 vim.g.copilot_filetypes = { ['markdown'] = true, ['yaml'] = true }
 
