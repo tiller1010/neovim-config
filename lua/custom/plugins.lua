@@ -30,6 +30,7 @@ local plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
+    enabled = true,
     opts = overrides.treesitter,
   },
 
